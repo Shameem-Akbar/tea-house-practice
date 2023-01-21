@@ -4,9 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+    <script src="https://kit.fontawesome.com/901d1596e3.js" crossorigin="anonymous"></script>
+    <title>Tea House</title>
 </head>
 <body>
-    
+    <header>
+        <!-- navbar & banner -->
+    </header>
+    <!-- Top Section -->
+    <section class="flex flex-col lg:flex-row
+     justify-center lg:gap-16 xl:gap-24 px-2 md:px-4 xl:mx-24 mt-4 lg:mt-20">
+        <div class=" lg:w-2/5">
+            <h1 class="font-bold text-7xl md:leading-tight ">It's good
+                tea time at The Tea House</h1>
+                <p class="text-gray-500 md:pt-5 pb-3 ">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+                <button class="bg-gradient-to-r from-[#FF8938] to-[#FF0000] text-white p-4 rounded-lg font-semibold text-xl flex gap-2">Explore More<img class="mt-2" src="images/arrow.png" alt=""> </button>
+        </div>
+        <div class="relative">
+            <img src="images/banner.png" alt="">
+            <div class="flex gap-5 rounded-lg shadow-lg bg-white w-52 p-3 absolute left-12 bottom-1 sm:left-16 sm:bottom-6">
+                <div class="my-auto text-yellow-400 pl-4"><i class="fa-solid fa-star"></i></div>
+                <div>
+                    <h2 class="font-bold text-3xl">5.00</h2>
+                    <p class="text-gray-500">Trust Pilot Rating</p>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
